@@ -13,6 +13,7 @@
 // Input: nums = [1,1,1,3,3,4,3,2,4,2 ]
 // Output: true
 
+// 1. intution
 var containsDuplicate = function (nums) {
   let obj = {};
   if (nums.length === 1) false;
@@ -29,3 +30,10 @@ var containsDuplicate = function (nums) {
 };
 
 console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
+
+////
+//approach-2
+// create a Set and then compare length of previous arr and new set, and if set has less length return it
+
+// time complexity O(n)
+// space complexity O(n)
